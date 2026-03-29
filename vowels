@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		String []a=new String[10];
+		for(int i=0;i<10;i++)
+		{
+		    Scanner scan=new Scanner(System.in);
+		    a[i]=scan.nextLine();
+		}
+		for(int i=0;i<10;i++)
+		{
+		    if((a[i].equals("a")&&a[i+1].equals("a"))||(a[i].equals("e")&&a[i+1].equals("e"))||(a[i].equals("i")&&a[i+1].equals("i"))||(a[i].equals("o")&&a[i+1].equals("o"))||(a[i].equals("u")&&a[i+1].equals("u")))
+		    {
+		        System.out.print(a[i]+a[i+1]);
+		    }
+		    if(a[i].equals("a")||a[i].equals("e")||a[i].equals("i")||a[i].equals("o")||a[i].equals("u"))
+		    {
+		        
+		    }
+		    else{
+		        System.out.print(a[i]);
+		    }
+		    
+		}
+	}
+}
