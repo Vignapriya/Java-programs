@@ -1,0 +1,30 @@
+// You are using Java
+import java.util.*;
+class main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        int[][] a=new int[n][n];
+        double sum=0;
+        double ans =0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                a[i][j]=scan.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                sum=sum+((a[i][j]*a[i][j]));
+                ans=Math.sqrt(sum);
+            }
+        }
+        System.out.print((int)ans);
+        
+    }
+}
